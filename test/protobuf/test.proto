@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package test; // 命名空间
+
+// 生成service服务类和相关的rpc方法
+option cc_generic_services = true; // 生成cc_generic_services.h和cc_generic_services.cc
+
+message Person {
+  bytes name = 1;
+  int32 age = 2;
+  bytes email = 3;
+};
+
+message LoginRequest {
+  bytes name = 1;
+  bytes pwd = 2;
+};
+
+message ResultCode {
+  int32 errCode = 1;
+  bytes errMsg = 2;
+};
+
+message LoginResponse {
+  ResultCode code = 1;
+  bool success = 2;
+}
+
+message GetFriendListRequest { uint32 userid = 1; }
+
+message GetFriendListResponse {
+  ResultCode code = 1;
+  repeated bytes friendList = 2; // 好友列表
+}
+
+service UserService {
+  rpc Login(LoginRequest) returns (LoginResponse);
+  rpc GetFriendList(GetFriendListRequest) returns (GetFriendListResponse);
+}

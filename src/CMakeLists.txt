@@ -1,0 +1,20 @@
+add_library(
+    myrpc 
+    rpcheader.pb.cc
+    rpcprovider.cc
+    rpcchannel.cc
+    rpcapplication.cc
+    rpcconfig.cc
+    rpccontroller.cc
+    logger.cc
+    zookeeperutil.cc
+)
+
+target_link_libraries(
+    myrpc
+    protobuf
+    muduo_net
+    muduo_base
+    pthread
+    zookeeper_mt
+)

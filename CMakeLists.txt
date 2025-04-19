@@ -1,6 +1,6 @@
 project(myrpc)
 
-cmake_minimum_required(3.15)
+cmake_minimum_required(VERSION 3.15)
 
 # 设置C++标准
 set(CMAKE_CXX_STANDARD 11)
@@ -16,3 +16,6 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 # 设置库文件搜索路径
 link_directories(${PROJECT_SOURCE_DIR}/lib)
+
+add_subdirectory(example)
+add_subdirectory(src)

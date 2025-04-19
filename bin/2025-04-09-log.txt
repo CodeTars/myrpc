@@ -1,0 +1,30 @@
+[2025-04-09 11:07:53] [INFO] Registering service: example.UserService
+[2025-04-09 11:07:53] [INFO] Registering method: example.UserService.Login
+[2025-04-09 11:07:53] [INFO] Registering method: example.UserService.Register
+[2025-04-09 11:07:53] [INFO] Connected to zookeeper server: 127.0.0.1:2181
+[2025-04-09 11:07:53] [INFO] Created zookeeper node: /UserService
+[2025-04-09 11:07:53] [INFO] Created zookeeper node: /UserService/Register
+[2025-04-09 11:07:53] [INFO] Created zookeeper node: /UserService/Login
+[2025-04-09 11:08:25] [INFO] Connected to zookeeper server: 127.0.0.1:2181
+[2025-04-09 11:08:25] [INFO] Get zookeeper node data: 127.0.0.1:8000
+[2025-04-09 11:08:25] [INFO] Received request: service_name=UserService, method_name=Login, args_size=13
+[2025-04-09 11:08:25] [INFO] Received data: 
+[2025-04-09 11:08:25] [INFO] Request header: 
+UserServiceLogin
+[2025-04-09 11:08:25] [INFO] Request args: 
+tom123456
+[2025-04-09 11:15:07] [INFO] Registering service: example.UserService
+[2025-04-09 11:15:07] [INFO] Registering method: example.UserService.Login
+[2025-04-09 11:15:07] [INFO] Registering method: example.UserService.Register
+[2025-04-09 11:15:07] [INFO] Connected to zookeeper server: 127.0.0.1:2181
+[2025-04-09 11:15:07] [INFO] Node already exists: /UserService
+[2025-04-09 11:15:07] [INFO] Created zookeeper node: /UserService/Register
+[2025-04-09 11:15:07] [INFO] Created zookeeper node: /UserService/Login
+[2025-04-09 11:15:13] [INFO] Connected to zookeeper server: 127.0.0.1:2181
+[2025-04-09 11:15:13] [INFO] Get zookeeper node data: 127.0.0.1:8000
+[2025-04-09 11:15:13] [INFO] Received request: service_name=UserService, method_name=Login, args_size=13
+[2025-04-09 11:15:13] [INFO] Received data: 
+[2025-04-09 11:15:13] [INFO] Request header: 
+UserServiceLogin
+[2025-04-09 11:15:13] [INFO] Request args: 
+tom123456
